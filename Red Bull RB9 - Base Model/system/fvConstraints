@@ -1,0 +1,28 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |				
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9                                   	
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvConstraints;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//To control on/off just modify the value.
+//In this case a large value is like off
+//Use from the begining so the object it is created
+
+limitU
+{
+    type            limitVelocity;
+    selectionMode   all;
+    max             200;	//100 - 10000 (large value is off)
+}
+
+//************************************************************************** //
+

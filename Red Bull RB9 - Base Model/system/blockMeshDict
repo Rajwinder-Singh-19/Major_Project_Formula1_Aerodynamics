@@ -1,0 +1,116 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+scale   1;
+
+xmin -15;
+xmax  60;
+ymin -9;
+ymax  0;
+zmin  -0.001;
+zmax  9;
+
+cellSize 2;
+
+deltax $cellSize;	
+deltay $cellSize;	
+deltaz $cellSize;
+
+lx #calc "($xmax) - ($xmin)";
+ly #calc "($ymax) - ($ymin)";
+lz #calc "($zmax) - ($zmin)";
+
+xcells #calc "round(($lx)/($deltax))";
+ycells #calc "round(($ly)/($deltay))";
+zcells #calc "round(($lz)/($deltaz))";
+
+vertices
+(
+    ($xmin  $ymin  $zmin)
+    ($xmax  $ymin  $zmin)
+    ($xmax  $ymax  $zmin)
+    ($xmin  $ymax  $zmin)
+    ($xmin  $ymin  $zmax)
+    ($xmax  $ymin  $zmax)
+    ($xmax  $ymax  $zmax)
+    ($xmin  $ymax  $zmax)
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) ($xcells $ycells $zcells) simpleGrading (1 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+    front
+    {
+        type patch;
+        faces
+        (
+            (1 5 4 0)
+        );
+    }
+    
+    back
+    {
+        type patch;
+        faces
+        (
+            (3 7 6 2)
+        );
+    }
+    
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 4 7 3)
+        );
+    }
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (2 6 5 1)
+        );
+    }
+    lowerWall
+    {
+        type wall;
+        faces
+        (
+            (0 3 2 1)
+        );
+    }
+    upperWall
+    {
+        type patch;
+        faces
+        (
+            (4 5 6 7)
+        );
+    }
+);
+
+
+// ************************************************************************* //

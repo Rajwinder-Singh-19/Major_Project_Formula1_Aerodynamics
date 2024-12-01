@@ -1,0 +1,180 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |				
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  9                                   	
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+    solvers
+    {
+        p
+        {
+/*
+        solver          GAMG;
+        tolerance       1e-06;
+        relTol          0.01;
+        smoother        GaussSeidel;
+        nPreSweeps      0;
+        nPostSweeps     2;
+        nFinestSweeps   2;
+        cacheAgglomeration false;
+        nCellsInCoarsestLevel 10;
+        agglomerator    faceAreaPair;
+        mergeLevels     1;
+*/
+
+        solver          PCG;
+        preconditioner
+        {
+            preconditioner  GAMG;
+            tolerance       1e-06;	//1e-06 1e-08
+            relTol          0.0;	//0.01 0
+            nVcycles        2;
+            smoother        GaussSeidel;
+            nPreSweeps      0;
+            nPostSweeps     2;
+            nFinestSweeps   2;
+            cacheAgglomeration false;
+            nCellsInCoarsestLevel 10;
+            agglomerator    faceAreaPair;
+            mergeLevels     1;
+        }
+
+        tolerance       1e-06;
+        relTol          0.01;
+        //maxIter         20;
+
+/*
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-6;
+        relTol          0.01;
+*/
+
+            minIter 1;
+        }
+
+        U
+        {
+            solver          PBiCGStab;
+            preconditioner  DILU;
+            tolerance       1e-06;	//1e-08
+            relTol          0.01;	//0.1 0.001
+
+            minIter 1;
+        }
+
+        k
+        {
+            solver          PBiCGStab;
+            preconditioner  DILU;
+            tolerance       1e-06;	//1e-08
+            relTol          0.01;	//0.1 0.001
+
+            minIter 1;
+        }
+
+        omega
+        {
+            solver          PBiCGStab;
+            preconditioner  DILU;
+            tolerance       1e-06;	//1e-08
+            relTol          0.01;	//0.1 0.001
+
+            minIter 1;
+        }
+
+/*
+    Phi
+    {
+        $p;
+    }
+*/
+
+        Phi
+        {
+            solver GAMG;
+            agglomerator faceAreaPair;
+            mergeLevels 1;
+            cacheAgglomeration true;
+            nCellsInCoarsestLevel 200;
+            tolerance 1e-6;
+            relTol 0.01;
+            smoother GaussSeidel;
+            nPreSweeps 0;
+            nPostSweeps 2;
+            nFinestSweeps 2;
+            minIter 1;
+        }
+
+    }
+
+    potentialFlow
+    {
+        nNonOrthogonalCorrectors 10;
+    }
+
+    SIMPLE
+    {
+        consistent yes;
+        nNonOrthogonalCorrectors 2;
+
+        pRefCell 0;
+        pRefValue 0;
+
+        residualControl
+        {
+            p 		1.0e-3;
+            U 		1.0e-3;
+            k 		1.0e-3;
+            omega 	1.0e-3;
+        }
+
+    }
+
+//SIMPLE
+/*
+    relaxationFactors
+    {
+        fields
+        {
+            p     0.3;
+	}
+
+        equations
+        {
+            U     0.7;
+            k     0.5;
+            omega 0.5;
+        }
+
+    }
+*/
+
+//SIMPLEC
+
+    relaxationFactors
+    {
+        fields
+        {
+	    ".*"  0.7;
+            //p     0.9;
+        }
+        equations
+        {
+	    ".*"  0.7;
+            //U     0.9;
+            //k     0.9;
+            //omega 0.9;
+        }
+    }
+
+
