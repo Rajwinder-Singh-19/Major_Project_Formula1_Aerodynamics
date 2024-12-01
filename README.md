@@ -1,4 +1,4 @@
-# High-Performance Aerodynamic Design of a Formula 1 Vehicle: A CFD-Based Approach Adhering To The The 2026 FIA Regulations
+# High-Performance Aerodynamic Design of a Formula 1 Vehicle: A CFD-Based Approach Adhering To The 2026 FIA Regulations
 ![Streamlines over Pressure 1](https://github.com/user-attachments/assets/c47a8cdd-3003-4411-9ca2-6b7f634a20ad)
 
 This repository contains the work done for the **Final Year Project** focused on the **Aerodynamic Design of an F1 Car** based on the 2026 Formula 1 regulations. The project uses advanced **CFD (Computational Fluid Dynamics)** simulations to optimize the aerodynamic performance of a Formula 1 car.
