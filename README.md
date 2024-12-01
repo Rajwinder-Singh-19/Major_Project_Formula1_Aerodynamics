@@ -28,4 +28,4 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/f1-aerodynamics-2026.git  
+   git clone https://github.com/Rajwinder-Singh-19/Major_Project_Formula1_Aerodynamics.git 
