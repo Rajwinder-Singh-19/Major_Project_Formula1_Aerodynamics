@@ -21,6 +21,8 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 
 ## Results and Visulizations
 ![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7)
+![Velocity Field](https://github.com/user-attachments/assets/7f3dc432-cde3-4f13-9514-5333e085dc00)
+![Vortices over U](https://github.com/user-attachments/assets/8727bd1f-0646-4fe5-b7da-0cb5a694073f)
 
 ## How to Use  
 
