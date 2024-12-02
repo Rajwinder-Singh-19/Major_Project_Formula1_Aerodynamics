@@ -52,7 +52,7 @@ The following images were captured by visualizing the data in paraview. All the 
 
 ![Screenshot from 2024-12-02 12-19-27](https://github.com/user-attachments/assets/c687adab-3eed-4da8-a485-de5403ec9060)
 |:--:| 
-| *RANS Parameter Tuner* |
+| *RANS Parameter Tuning Software* |
 
 ## How to Use  
 
