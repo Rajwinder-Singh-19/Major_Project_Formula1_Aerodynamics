@@ -22,7 +22,8 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 
 ## Tasks Done So Far  
 
-- **Baseline Model:** Modeled the **Red Bull RB9** in CAD as a starting point.  
+- **Baseline Model:** Modeled the **Red Bull RB9** in CAD as a starting point.
+- **Developed A Software for RANS Calculation:** Developed a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters
 - **CFD Simulations:** Used OpenFOAM for meshing and CFD simulation of incompressible, turbulen flow around the created model using SIMPLE algorithm with k-omega SST model for turbulence  
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, a standard benchmark in automotive aerodynamics. 
 
@@ -48,6 +49,10 @@ The following images were captured by visualizing the data in paraview. All the 
 | ![Downforce Distribution](https://github.com/user-attachments/assets/ce56513f-f1cc-468e-8395-e3e70d2e4be3) |
 |:--:| 
 | *Downforce Distribution on the surface* |
+
+![Screenshot from 2024-12-02 12-19-27](https://github.com/user-attachments/assets/c687adab-3eed-4da8-a485-de5403ec9060)
+|:--:| 
+| *RANS Parameter Tuner* |
 
 ## How to Use  
 
