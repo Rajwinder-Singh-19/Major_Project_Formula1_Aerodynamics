@@ -24,19 +24,23 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, a standard benchmark in automotive aerodynamics. 
 
 ## Results and Visulizations
-![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7)
+| ![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7) |
 |:--:| 
 | *Pressure contours* |
-![Velocity Field](https://github.com/user-attachments/assets/7f3dc432-cde3-4f13-9514-5333e085dc00)
+
+| ![Velocity Field](https://github.com/user-attachments/assets/7f3dc432-cde3-4f13-9514-5333e085dc00) |
 |:--:| 
 | *Wake captured* |
-![Vortices over U](https://github.com/user-attachments/assets/8727bd1f-0646-4fe5-b7da-0cb5a694073f)
+
+| ![Vortices over U](https://github.com/user-attachments/assets/8727bd1f-0646-4fe5-b7da-0cb5a694073f) |
 |:--:| 
 | *Q-Criterion Plot for observing vortex structures* |
-![Drag Distribution](https://github.com/user-attachments/assets/b6b512ff-8a7d-4d22-82b6-4fa0a24d15df)
+
+| ![Drag Distribution](https://github.com/user-attachments/assets/b6b512ff-8a7d-4d22-82b6-4fa0a24d15df) |
 |:--:| 
 | *Drag Distribution on the surface* |
-![Downforce Distribution](https://github.com/user-attachments/assets/ce56513f-f1cc-468e-8395-e3e70d2e4be3)
+
+| ![Downforce Distribution](https://github.com/user-attachments/assets/ce56513f-f1cc-468e-8395-e3e70d2e4be3) |
 |:--:| 
 | *Downforce Distribution on the surface* |
 
