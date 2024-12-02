@@ -60,4 +60,4 @@ The following images were captured by visualizing the data in paraview. All the 
 | Name | Email |
 | :---: | :---: |
 | Bhavtegh Singh Gill | bhavteghsinghgill.bt21aero@pec.edu.in |
-| Aniket | aniket.bt21aero.pec.edu.in |
+| Aniket | aniket.bt21aero@pec.edu.in |
