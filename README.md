@@ -4,7 +4,7 @@
 | *Surface LIC of velocity field streamlines superimposed over the coloured pressure field* |
 
 
-This repository contains the OpenFOAM CFD case for the **Final Year Project** focused on the **Aerodynamic Design of an F1 Car** based on the 2026 Formula 1 regulations. The project uses incompressible, turbulent flow CFD simulations to optimize the aerodynamic performance of a Formula 1 car.
+This repository contains the record of the **Final Year Project** focused on the **Aerodynamic Design of an F1 Car** based on the 2026 Formula 1 regulations. The project uses turbulent, incompressible flow CFD simulations to optimize the aerodynamic performance of a Formula 1 car.
 
 | ![XP](https://github.com/user-attachments/assets/c0aa6cdf-30f5-4788-b43e-fe9ceb61a508) |
 |:--:| 
@@ -20,20 +20,20 @@ This repository contains the OpenFOAM CFD case for the **Final Year Project** fo
 
 ## Overview  
 
-The primary goal of this project is to design, analyze, and optimize the aerodynamics of an F1 car in compliance with the 2026 regulations. Using the **Red Bull Racing RB9** model as the baseline, we performed extensive CFD simulations to gather all the relevant data reqired to optimize the car design.  
+The primary goal of this project is to design, analyze, and optimize the aerodynamics of an F1 car in compliance with the 2026 regulations. Using the **Red Bull Racing RB9** model as the baseline, we performed extensive CFD simulations to gather all the relevant data reqired to optimize the car design, which included pressure and velocity data, coefficients of drag and downforce. The CFD analysis done in the first half of the project did not model the tyre rotation.
 
 ## Software and Tools  
 
 - **CAD Software:** Autodesk Fusion 360  
-- **CFD Tools:** OpenFOAM v2406.  
+- **CFD Tools:** OpenFOAM v2406. SnappyHexMesh as the mesher. 
 - **Post-Processing:** Kitware Paraview 5.13
 
-## Tasks Done So Far  
+## Scope of the project  
 
-- **Baseline Model:** Modeled the **Red Bull RB9** in CAD as a starting point.
-- **Developed A Software for RANS Calculation:** Developed a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters
-- **CFD Simulations:** Used OpenFOAM for meshing and CFD simulation of incompressible, turbulen flow around the created model using SIMPLE algorithm with k-omega SST model for turbulence  
-- **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, a standard benchmark in automotive aerodynamics. 
+- **Baseline Model:** Modeled the **Red Bull RB9** in Autodesk Fusion as the baseline design.
+- **Developed A Software for RANS Calculation:** Developed a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
+- **CFD Simulations:** Used OpenFOAM for meshing and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
+- **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
 
 ## Results and Visulizations
 The following images were captured by visualizing the data in paraview. All the relevant value scales for variables are provided in each image.
