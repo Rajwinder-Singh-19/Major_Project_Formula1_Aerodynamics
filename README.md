@@ -30,9 +30,9 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 
 ## Scope of the project  
 
-- **Baseline Model:** Modeled the **Red Bull RB9** in Autodesk Fusion as the baseline design.
-- **Developed A Software for RANS Calculation:** Developed a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
-- **CFD Simulations:** Used OpenFOAM for meshing and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
+- **Baseline Model:** Modeling the **Red Bull RB9** in Autodesk Fusion as the baseline design.
+- **Developing A Software for RANS Calculation:** Developing a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
+- **CFD Simulations:** Using OpenFOAM for meshing and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
 
 ## Results and Visulizations
