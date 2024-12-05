@@ -26,7 +26,7 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 
 - **CAD Software:** Autodesk Fusion 360  
 - **CFD Tools:** OpenFOAM v2406. SnappyHexMesh as the mesher. 
-- **Post-Processing:** Kitware Paraview 5.13
+- **Post-Processing:** Kitware Paraview 5.11
 
 ## Scope of the project  
 
@@ -34,6 +34,36 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 - **Developing A Software for RANS Calculation:** Developing a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
 - **CFD Simulations:** Using OpenFOAM for meshing and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
+
+## How to Use  
+
+### Prerequisites
+- Linux (Debian/OpenSUSE/RedHat variants preferred)
+- ESI OpenFOAM v2406 https://develop.openfoam.com/Development/openfoam/-/wikis/precompiled
+- GNU Compiler Collection 
+- Kitware Paraview 5.11 https://www.paraview.org/
+
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Rajwinder-Singh-19/Major_Project_Formula1_Aerodynamics.git
+   ```
+2. Run the follwing bash script
+   ```bash
+   procs=8 (enter the number of processors available on your CPU)
+   blockMesh | tee log.blockMesh
+   surfaceFeatureExtract | tee log.surfaceFeatureExtract
+   decomposePar | tee log.decomposePar1
+   mpirun-np $procs snappyHexMesh -overwrite -parallel | tee log.snappyHexMesh
+   reconstructParMesh | tee log.reconstructParMesh
+   rm -r proc*
+   decomposePar | tee log.decomposePar2
+   mpirun-np $procs potentialFoam -parallel -writep
+   mpirun-np $procs simpleFoam -parallel | tee log.simpleFoam
+   reconstructPar | tee log.reconstructParSolution
+   simpleFoam -postProcess -func yPlus
+   touch RB.foam
+   paraview RB.foam &
+   ```
 
 ## Results and Visulizations
 The following images were captured by visualizing the data in paraview. All the relevant value scales for variables are provided in each image.
@@ -61,12 +91,6 @@ The following images were captured by visualizing the data in paraview. All the 
 ![Screenshot from 2024-12-02 12-19-27](https://github.com/user-attachments/assets/c687adab-3eed-4da8-a485-de5403ec9060)
 |:--:| 
 | *RANS Parameter Tuning Software* |
-
-## How to Use  
-
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/Rajwinder-Singh-19/Major_Project_Formula1_Aerodynamics.git
 
 ## Contributors
 
