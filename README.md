@@ -6,9 +6,17 @@
 
 This repository contains the OpenFOAM CFD case for the **Final Year Project** focused on the **Aerodynamic Design of an F1 Car** based on the 2026 Formula 1 regulations. The project uses incompressible, turbulent flow CFD simulations to optimize the aerodynamic performance of a Formula 1 car.
 
-| ![](https://github.com/user-attachments/assets/2b26a115-239d-4f33-b0b4-28a034808eab) |
+| ![XP](https://github.com/user-attachments/assets/52672c4c-479c-466b-932d-ffbb8b58ac24) |
 |:--:| 
 | *Velocity profile around the car in X-Plane* |
+
+| ![YP](https://github.com/user-attachments/assets/1d3e3177-a29e-434d-8340-1d38efbad623) |
+|:--:| 
+| *Velocity profile around the car in Y-Plane* |
+
+| ![YP](https://![ZP](https://github.com/user-attachments/assets/a7f485d4-d915-4161-b107-6fda22d9a9b6) |
+|:--:| 
+| *Velocity profile around the car in Z-Plane* |
 
 ## Overview  
 
