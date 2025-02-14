@@ -52,7 +52,8 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
    ```bash  
    git clone https://github.com/Rajwinder-Singh-19/Major_Project_Formula1_Aerodynamics.git
    ```
-2. Run the follwing bash script
+2. Change the directory to 'RB9 Base Model'
+3. Run the follwing bash script (copy/paste in the terminal)
    ```bash
    procs=8 (enter the number of processors available on your CPU)
    blockMesh | tee log.blockMesh
