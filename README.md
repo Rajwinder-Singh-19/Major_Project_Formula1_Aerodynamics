@@ -25,15 +25,16 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 ## Software and Tools  
 
 - **CAD Software:** Autodesk Fusion 360  
-- **CFD Tools:** OpenFOAM v2406. SnappyHexMesh as the mesher. 
+- **CFD Tools:** OpenFOAM v2406. SnappyHexMesh as the mesh generator. 
 - **Post-Processing:** Kitware Paraview 5.11
 
-## Scope of the project  
+## Progress of the Project So Far  
 
 - **Baseline Model:** Modeling the **Red Bull RB9** in Autodesk Fusion as the baseline design.
 - **Developing A Software for RANS Calculation:** Developing a software using C++ and Qt framework to calculate RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
 - **CFD Simulations:** Using OpenFOAM for meshing and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
+- **Frontwing Design:** Designed a new frontwing which showed 14% reduction in coefficient of drag and 38% increase in coefficient of downforce as compared to the RB9 frontwing.
 
 ## How to Use  
 
@@ -54,7 +55,7 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
    surfaceFeatureExtract | tee log.surfaceFeatureExtract
    decomposePar | tee log.decomposePar1
    mpirun-np $procs snappyHexMesh -overwrite -parallel | tee log.snappyHexMesh
-   reconstructParMesh | tee log.reconstructParMesh
+   reconstructParMesh -constant | tee log.reconstructParMesh
    rm -r proc*
    decomposePar | tee log.decomposePar2
    mpirun-np $procs potentialFoam -parallel -writep
