@@ -52,7 +52,7 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
    ```bash  
    git clone https://github.com/Rajwinder-Singh-19/Major_Project_Formula1_Aerodynamics.git
    ```
-2. Change the directory to 'RB9 Base Model'
+2. Change the directory to 'Red Bull RB9 Base Model' and open terminal
 3. Run the follwing bash script (copy/paste in the terminal)
    ```bash
    procs=8 (enter the number of processors available on your CPU)
@@ -70,6 +70,7 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
    touch RB.foam
    paraview RB.foam &
    ```
+4. Visualize the results in Paraview
 
 ## Results and Visulizations
 The following images were captured by visualizing the data in paraview. All the relevant value scales for variables are provided in each image.
