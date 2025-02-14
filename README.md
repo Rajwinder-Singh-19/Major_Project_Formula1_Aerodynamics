@@ -20,8 +20,7 @@ This repository contains the record of the **Final Year Project** focused on the
 
 ## Overview  
 
-The primary goal of this project is to design, analyze, and optimize the aerodynamics of an F1 car in compliance with the 2026 regulations. Using the **Red Bull Racing RB9** model as the baseline, we performed extensive CFD simulations to gather all the relevant data reqired to optimize the car design, which included pressure and velocity data, coefficients of drag and downforce. The CFD analysis done in the first half of the project did not model the tyre rotation.
-
+The primary goal of this project is to design, analyze, and optimize the aerodynamics of an F1 car in compliance with the 2026 regulations. Using the **Red Bull Racing RB9** model as the baseline, we performed extensive CFD simulations to gather all the relevant data reqired to optimize the car design, which included pressure and velocity data, coefficients of drag and downforce.
 ## Software and Tools  
 
 - **CAD Software:** Autodesk Fusion 360  
