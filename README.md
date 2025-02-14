@@ -18,6 +18,10 @@ This repository contains the record of the **Final Year Project** focused on the
 |:--:| 
 | *Velocity profile around the car in Z-Plane* |
 
+| ![FwingFusion](https://github.com/user-attachments/assets/9813c0bd-6c30-44b8-a941-c464d3c54061) |
+|:--:| 
+| *Updated Frontwing Design* |
+
 ## Overview  
 
 The primary goal of this project is to design, analyze, and optimize the aerodynamics of an F1 car in compliance with the 2026 regulations. Using the **Red Bull Racing RB9** model as the baseline, we performed extensive CFD simulations to gather all the relevant data reqired to optimize the car design, which included pressure and velocity data, coefficients of drag and downforce.
