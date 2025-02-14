@@ -93,7 +93,7 @@ The following images were captured by visualizing the data in paraview. All the 
 
 | ![Downforce Distribution](https://github.com/user-attachments/assets/ce56513f-f1cc-468e-8395-e3e70d2e4be3) |
 |:--:| 
-| *Downforce Distribution on the surface* |
+| *Downforce Distribution on the surface (negative values indicate downforce, positive lift)* |
 
 ![Screenshot from 2024-12-02 12-19-27](https://github.com/user-attachments/assets/c687adab-3eed-4da8-a485-de5403ec9060)
 |:--:| 
