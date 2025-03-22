@@ -82,6 +82,22 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 ## Results and Visulizations
 The following images were captured by visualizing the data in paraview. All the relevant value scales for variables are provided in each image.
 
+| ![Drag (1)](https://github.com/user-attachments/assets/8d4b443c-74c3-45a2-9ac1-44404ade8406) |
+|:-:|
+| *Drag Distribution over the RB9 frontwing* |
+
+| ![Drag](https://github.com/user-attachments/assets/2c794d14-3e12-45a6-97f2-373b53b964dc) |
+|:-:|
+| *Drag Distribution over the updated frontwing* |
+
+| ![Downforce (1)](https://github.com/user-attachments/assets/dd7c06df-fc20-40d1-955c-6d404045d859) |
+|:-:|
+| *Downforce Distribution over the RB9 frontwing* |
+
+| ![Downforce](https://github.com/user-attachments/assets/9f75b204-8a93-44a5-860e-a5dfaff66ff1) |
+|:-:|
+| *Downforce Distribution over the updated frontwing* |
+
 | ![Streamlines over Pressure 1](https://github.com/user-attachments/assets/c47a8cdd-3003-4411-9ca2-6b7f634a20ad) |
 |:-:|
 | *Surface LIC of velocity field streamlines superimposed over the coloured pressure field* |
