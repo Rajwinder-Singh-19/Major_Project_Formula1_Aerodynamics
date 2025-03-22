@@ -1,8 +1,7 @@
 # High-Performance Aerodynamic Design of a Formula 1 Vehicle: A CFD-Based Approach Adhering To The 2026 FIA Regulations
-| ![Streamlines over Pressure 1](https://github.com/user-attachments/assets/c47a8cdd-3003-4411-9ca2-6b7f634a20ad) |
-|:-:|
-| *Surface LIC of velocity field streamlines superimposed over the coloured pressure field* |
-
+| ![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7) |
+|:--:| 
+| *Pressure contours on the RedBull Racing RB9* |
 
 This repository contains the record of the **Final Year Project** focused on the **Aerodynamic Design of an F1 Car** based on the 2026 Formula 1 regulations. The project uses turbulent, incompressible flow CFD simulations to optimize the aerodynamic performance of a Formula 1 car.
 
@@ -83,9 +82,9 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 ## Results and Visulizations
 The following images were captured by visualizing the data in paraview. All the relevant value scales for variables are provided in each image.
 
-| ![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7) |
-|:--:| 
-| *Pressure contours* |
+| ![Streamlines over Pressure 1](https://github.com/user-attachments/assets/c47a8cdd-3003-4411-9ca2-6b7f634a20ad) |
+|:-:|
+| *Surface LIC of velocity field streamlines superimposed over the coloured pressure field* |
 
 | ![Velocity Field](https://github.com/user-attachments/assets/7f3dc432-cde3-4f13-9514-5333e085dc00) |
 |:--:| 
