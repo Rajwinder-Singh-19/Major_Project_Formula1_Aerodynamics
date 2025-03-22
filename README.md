@@ -23,6 +23,7 @@ This repository contains the record of the **Final Year Project** focused on the
 | *Updated Frontwing Design* |
 
 | ![U_Evo (1)](https://github.com/user-attachments/assets/6c8b25b0-a133-48c6-81b4-9129c372bf7e) |
+|:--:|
 | *Velocity profile around the RB9 frontwing in Y-Plane* |
 
 | ![U_Evo](https://github.com/user-attachments/assets/da3dccfb-51b6-4e98-add3-9f8de8b9307f) |
