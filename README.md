@@ -8,19 +8,26 @@ This repository contains the record of the **Final Year Project** focused on the
 
 | ![XP](https://github.com/user-attachments/assets/c0aa6cdf-30f5-4788-b43e-fe9ceb61a508) |
 |:--:| 
-| *Velocity profile around the car in X-Plane* |
+| *Velocity profile around the RB9 Car in X-Plane* |
 
 | ![YP](https://github.com/user-attachments/assets/a0298fb4-2aa6-44dc-b190-6364938549d0) |
 |:--:| 
-| *Velocity profile around the car in Y-Plane* |
+| *Velocity profile around the RB9 Car in Y-Plane* |
 
 | ![ZP](https://github.com/user-attachments/assets/8ee1e2d5-a836-429d-9421-aae6cfb572a4) |
 |:--:| 
-| *Velocity profile around the car in Z-Plane* |
+| *Velocity profile around the RB9 in Z-Plane* |
 
 | ![FwingFusion](https://github.com/user-attachments/assets/9813c0bd-6c30-44b8-a941-c464d3c54061) |
 |:--:| 
 | *Updated Frontwing Design* |
+
+| ![U_Evo (1)](https://github.com/user-attachments/assets/6c8b25b0-a133-48c6-81b4-9129c372bf7e) |
+| *Velocity profile around the RB9 frontwing in Y-Plane* |
+
+| ![U_Evo](https://github.com/user-attachments/assets/da3dccfb-51b6-4e98-add3-9f8de8b9307f) |
+|:--:| 
+| *Velocity profile around the new frontwing in Y-Plane* |
 
 ## Overview  
 
