@@ -34,7 +34,7 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 - **CFD Tools:** OpenFOAM v2406. SnappyHexMesh as the mesh generator. 
 - **Post-Processing:** Kitware Paraview 5.11
 
-## Progress of the Project So Far  
+## Progress of the Project  
 
 - **Baseline Model:** Modelled the **Red Bull RB9** in Autodesk Fusion as the baseline design.
 - **Developing A Software for RANS Calculation:** Developed a software using C++ and Qt framework to calculate and tune RANS parameters for boundary and initial conditions, along with mesh refinement parameters.
@@ -42,7 +42,8 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
 - **Frontwing Design:** Designed a new frontwing which showed 14% reduction in coefficient of drag and 38% increase in coefficient of downforce as compared to the RB9 frontwing.
 - **Rearwing Design:** Designed a new frontwing which showed 60% increase in coefficient of downforce as compared to the RB9 frontwing.
-- **Full Chassis and Ground Design:** Compliant with 2026 FIA regulations
+- **Full Chassis and Ground Design:** Compliant with 2026 FIA regulations.
+- **Result:** Optimal design with enhanced aerodynamic efficiency.
     
   
 | ![FwingFusion](https://github.com/user-attachments/assets/9813c0bd-6c30-44b8-a941-c464d3c54061) |
