@@ -41,6 +41,9 @@ The primary goal of this project is to design, analyze, and optimize the aerodyn
 - **CFD Simulations:** Used OpenFOAM for meshing (SnappyHexMesh) and CFD simulation of turbulent, incompressible flow around the RB9 model using SIMPLE algorithm with k-omega SST turbulence model   
 - **Solver Validation:** Validated the CFD solver using the **Ahmed Body**, by recreating the results by Meile, Brenn, Reppenhagen and Lechner https://www.researchgate.net/publication/330383775_Experiments_and_numerical_simulations_on_the_aerodynamics_of_the_Ahmed_body
 - **Frontwing Design:** Designed a new frontwing which showed 14% reduction in coefficient of drag and 38% increase in coefficient of downforce as compared to the RB9 frontwing.
+- **Rearwing Design:** Designed a new frontwing which showed 60% increase in coefficient of downforce as compared to the RB9 frontwing.
+- **Full Chassis and Ground Design:** Compliant with 2026 FIA regulations
+    
   
 | ![FwingFusion](https://github.com/user-attachments/assets/9813c0bd-6c30-44b8-a941-c464d3c54061) |
 |:--:| 
