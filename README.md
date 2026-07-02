@@ -1,4 +1,4 @@
-# High-Performance Aerodynamic Design of a Formula 1 Vehicle: A CFD-Based Approach Adhering To The 2026 FIA Regulations
+# Aerodynamic Design of a Formula 1 Racing Vehicle: A CFD-Based Approach Adhering To The 2026 FIA Regulations
 | ![Pressure Contours Iso](https://github.com/user-attachments/assets/4453661a-3595-451d-82c3-3442003376d7) |
 |:--:| 
 | *Pressure contours on the RedBull Racing RB9* |
